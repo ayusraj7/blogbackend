@@ -15,6 +15,9 @@ app.listen(process.env.PORT,()=>{
     
     console.log('Backend is running at port',process.env.PORT);
 })
+app.use('/',(req,res)=>{
+    console.log('how are you ');
+})
 
 const {databaseConnect}=require('./config/database');
 databaseConnect();
