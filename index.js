@@ -11,9 +11,9 @@ app.use(express.json());
 const bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen("5000",()=>{
+app.listen(process.env.PORT,()=>{
     
-    console.log('Backend is running at port 5000');
+    console.log('Backend is running at port');
 })
 
 const {databaseConnect}=require('./config/database');
