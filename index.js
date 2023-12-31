@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(process.env.PORT,()=>{
     
-    console.log('Backend is running at port');
+    console.log('Backend is running at port',process.env.PORT);
 })
 
 const {databaseConnect}=require('./config/database');
